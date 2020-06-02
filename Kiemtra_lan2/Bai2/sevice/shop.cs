@@ -27,7 +27,7 @@ namespace Bai2.sevice
 
         public void ReadData()
         {
-            string fulllink = $@"{path}\{nameFileData}";
+            string fulllink = $@"{path}{nameFileData}";
             readwriteFile<Listorder>.ReadData(fulllink, ref listorder);
         }
 
@@ -43,7 +43,7 @@ namespace Bai2.sevice
         public void PrintBill(Order od)
         {
             string billname = $"{DateTime.Now.ToString("ddMMyyyy")}_order_{od.OrderId}";
-            readwriteFile<Order>.WriteData($@"{path}\{billname}", od);
+            readwriteFile<Order>.WriteData($@"{path}{billname}", od);
             string fulllink = $"{path}{nameFileData}";
             readwriteFile<Listorder>.WriteData(fulllink, listorder);
         }
