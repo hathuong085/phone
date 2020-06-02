@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6lEvyrYrMmWlCS7kP4bNsF1eyzXAXc9TMttTPt9QfhNeUr9NbGTMpsyT97ptO1cdwFXoWrxUROJg1No29W6+Xg==",
+  "dgSpecHash": "7gvZiw48KvRdWEJ+tDkQ78hbo+EHzvCXnRb+9z4UjKKVVZaANPN1P0Lg9NGwBOTZl7tyhm5MUz0VLCvzczgIlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Kiemtra_lan2\\Bai2\\Bai2.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Kt_lan2\\Kiemtra_lan2\\Bai2\\Bai2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

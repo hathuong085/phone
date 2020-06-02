@@ -194,7 +194,7 @@ namespace Bai2.sevice
         }
 
 
-        public static string path = $@"C:\Users\Admin\source\repos\Kiemtra_lan2\Bai2\Data\";
+        public static string path = $@"C:\Users\Admin\Desktop\Kt_lan2\Kiemtra_lan2\Bai2\Data\";
         public static string nameFile = "data.json";
         public static shop Shop = new shop(path, nameFile);
 

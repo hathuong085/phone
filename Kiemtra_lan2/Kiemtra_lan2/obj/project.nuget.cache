@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LAVG2L/v2P5QIIDm9cZ6oZBMv0L+DUtSJGfXDgL/fdgGS1R8ZFV7jr8Hl513rV0TkUl6xaq31RXd4qGDeA0Gug==",
+  "dgSpecHash": "a7PSBy3SYUguhAkIkXj5lbEB4pAjeLlNxqk5swx0FyEF58j5DjhUTpKSXeGNdBWk37nz6a3u/DDRCWpvj+aOeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Kiemtra_lan2\\Kiemtra_lan2\\Kiemtra_lan2.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Kt_lan2\\Kiemtra_lan2\\Kiemtra_lan2\\Kiemtra_lan2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
