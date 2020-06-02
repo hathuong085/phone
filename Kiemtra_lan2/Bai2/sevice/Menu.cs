@@ -25,6 +25,10 @@ namespace Bai2.sevice
                 {
                     option = number;
                 }
+                if (option > 5 || option < 1)
+                {
+                    Console.Clear();
+                }
             }
             while (option > 5 || option < 1);
 
@@ -83,6 +87,11 @@ namespace Bai2.sevice
                 {
                     option = number;
                 }
+                if (option > 4 || option < 1)
+                {
+                    Console.Clear();
+                    Console.WriteLine(od.ToString());
+                };
             }
             while (option > 4 || option < 1);
 
@@ -129,13 +138,15 @@ namespace Bai2.sevice
                     Shop.listorder.ListOrder[ind].Products = od.Products;
                     string fulllink = $"{path}{nameFile}";
                     readwriteFile<Listorder>.WriteData(fulllink, Shop.listorder);
+                    Console.Clear();
+                    Console.WriteLine(od.ToString());
                     Console.WriteLine("Thêm thành công!");
-                    od.ToString();
                     Console.Write("Bạn có muốn thêm sản phẩm nữa hay không? y/n:  ");
                 } while (Console.ReadLine().ToLower() == "y");
             }
             else
             {
+                Console.WriteLine(od.ToString());
                 Console.WriteLine("Đơn hàng đã được thanh toán hoặc đã bị hủy!");
             }
 
@@ -152,20 +163,34 @@ namespace Bai2.sevice
                 Shop.listorder.ListOrder[ind].Status = od.Status;
                 string fulllink = $"{path}{nameFile}";
                 readwriteFile<Listorder>.WriteData(fulllink, Shop.listorder);
+                Console.Clear();
+                Console.WriteLine(od.ToString());
                 Console.WriteLine("Cập nhật thành công!");
             }
             catch (Exception)
             {
                 Console.WriteLine("Lựa chọn là 1 con số.Vui lòng nhập lại!");
+                Console.WriteLine(od.ToString());
                 UpdateStatus(od);
             }
         }
         private static void Pay(Order od)
         {
-            od.Status = 2;
-            Shop.PrintBill(od);
-            Console.WriteLine("Thanh toán thành công!");
-            Console.WriteLine(od.ToString());
+            if (od.Status == 1)
+            {
+                od.Status = 2;
+                Shop.PrintBill(od);
+                Console.Clear();
+                Console.WriteLine(od.ToString());
+                Console.WriteLine("Thanh toán thành công!");
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine(od.ToString());
+                Console.WriteLine("Đơn đã bị hủy hoặc đã được thanh toán!");
+            }
+            
         }
 
 
@@ -183,17 +208,25 @@ namespace Bai2.sevice
 
         private static void searchorder()
         {
-            Console.Write("Nhập mã đơn hàng:  ");
-            int id = int.Parse(Console.ReadLine());
-            Order od = Shop.Check(id);
-            if (od != null)
+            try
             {
-                Console.WriteLine(od.ToString());
-                CreateMenu2(od);
-            }
-            else
+                Console.Write("Nhập mã đơn hàng:  ");
+                int id = int.Parse(Console.ReadLine());
+                Order od = Shop.Check(id);
+                if (od != null)
+                {
+                    Console.WriteLine(od.ToString());
+                    CreateMenu2(od);
+                }
+                else
+                {
+                    Console.WriteLine("Không tìm thấy đơn!");
+                }
+            } catch(Exception)
             {
-                Console.WriteLine("Không tìm thấy đơn!");
+                Console.Clear();
+                Console.WriteLine("Mã đơn hàng là một số nguyên!Vui lòng nhập lại.");
+                searchorder();
             }
         }
 

@@ -8,7 +8,7 @@ namespace Bai2.sevice
 {
     static class readwriteFile<T>
     {
-        public static void ReadData(string fullpath, T data)
+        public static void ReadData(string fullpath,ref T data)
         {
             using (StreamReader sr = File.OpenText(fullpath))
             {

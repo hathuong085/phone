@@ -1,0 +1,22 @@
+{
+  "Products": [
+    {
+      "name": "ada",
+      "price": 12,
+      "count": 12,
+      "Amount": 144
+    },
+    {
+      "name": "quan",
+      "price": 101,
+      "count": 10,
+      "Amount": 1010
+    }
+  ],
+  "OrderId": 2,
+  "NameCustomer": "thu",
+  "Add": "sada",
+  "TimeOrder": "01/06/2020 10:20 PM",
+  "Status": 2,
+  "TotalAmount": 1154
+}
