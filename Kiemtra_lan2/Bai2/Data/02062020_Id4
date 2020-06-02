@@ -1,0 +1,28 @@
+{
+  "Products": [
+    {
+      "name": "nuoc hoa",
+      "price": 120,
+      "count": 120,
+      "Amount": 14400
+    },
+    {
+      "name": "ao",
+      "price": 10,
+      "count": 10,
+      "Amount": 100
+    },
+    {
+      "name": "quan",
+      "price": 120,
+      "count": 10,
+      "Amount": 1200
+    }
+  ],
+  "OrderId": 4,
+  "NameCustomer": "phap",
+  "Add": "thuan an",
+  "TimeOrder": "01/06/2020 10:29 PM",
+  "Status": 2,
+  "TotalAmount": 15700
+}
